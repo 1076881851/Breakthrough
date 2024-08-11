@@ -39,10 +39,10 @@ Go 语言的 `sort` 包提供了一系列用于排序的函数和接口，这些
          return people[i].Age < people[j].Age // 根据年龄升序排序
      })
 
-    nums := []int{5, 3, 4, 7, 2, 1, 9}
-    sort.Slice(nums, func(i, j int) bool {
-        return nums[i] > nums[j]  // 降序
-    })
+     nums := []int{5, 3, 4, 7, 2, 1, 9}
+     sort.Slice(nums, func(i, j int) bool {
+         return nums[i] > nums[j]  // 降序
+     })
      ```
 
 5. **`sort.SliceStable(slice interface{}, less func(i, j int) bool)`**
